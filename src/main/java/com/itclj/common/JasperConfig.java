@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.jasperreports.JasperReportsViewResol
 public class JasperConfig extends WebMvcConfigurerAdapter {
 
     private final static String REPORT_DATA_KEY = "datasource";
-    private final static String PATH_KEY = "classpath:jaspertemplate/";
+    private final static String PATH_KEY = "classpath:jrxml/";
     private final static String TYPE_KEY = ".jrxml";
     private final static String VIEW_KEY = "Report";
 
