@@ -15,8 +15,9 @@
 
   <properties>
     <spring-boot.version>1.5.8.RELEASE</spring-boot.version>
-    <jasperreports.version>6.4.3</jasperreports.version>
+    <jasperreports.version>6.3.1</jasperreports.version>
     <jackson.version>2.9.2</jackson.version>
+    <spring.version>4.3.12.RELEASE</spring.version>
   </properties>
 
   <dependencies>
@@ -50,6 +51,12 @@
       <artifactId>jackson-annotations</artifactId>
       <version>${jackson.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>

@@ -51,7 +51,6 @@ public class UserController {
         modelMap.put(DATASOURCE, jrDataSource);
         modelMap.put(FILE_FORMAT, format);
         ModelAndView modelAndView = new ModelAndView(reportName, modelMap);
-        modelAndView.setViewName("jrxml/itclj_report_A4");
         return modelAndView;
     }
 
