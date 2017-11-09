@@ -50,7 +50,7 @@ public class UserController {
         JRDataSource jrDataSource = new JRMapCollectionDataSource(itemsMap);
         modelMap.put(DATASOURCE, jrDataSource);
         modelMap.put(FILE_FORMAT, format);
-        ModelAndView modelAndView = new ModelAndView(reportName, modelMap);
+        ModelAndView modelAndView = new ModelAndView(reportName, map);
         return modelAndView;
     }
 

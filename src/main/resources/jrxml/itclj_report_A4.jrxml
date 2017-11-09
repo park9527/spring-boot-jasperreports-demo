@@ -5,24 +5,16 @@
 	<parameter name="name" class="java.lang.String"/>
 	<parameter name="student_id" class="java.lang.String"/>
 	<parameter name="ranking" class="java.lang.Integer"/>
-	<parameter name="score_math" class="java.lang.Float"/>
-	<parameter name="score_chinese" class="java.lang.Float"/>
-	<parameter name="score_english" class="java.lang.Float"/>
-	<parameter name="score_chemistry" class="java.lang.Float"/>
-	<parameter name="score_physical" class="java.lang.Float"/>
-	<parameter name="score_biology" class="java.lang.Float"/>
-	<parameter name="score_top" class="java.lang.Float"/>
+	<parameter name="score_math" class="java.lang.Integer"/>
+	<parameter name="score_chinese" class="java.lang.Integer"/>
+	<parameter name="score_english" class="java.lang.Integer"/>
+	<parameter name="score_chemistry" class="java.lang.Integer"/>
+	<parameter name="score_physical" class="java.lang.Integer"/>
+	<parameter name="score_biology" class="java.lang.Integer"/>
+	<parameter name="score_top" class="java.lang.Integer"/>
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
-	<variable name="total" class="java.lang.Float">
-		<variableExpression><![CDATA[$P{score_math}+$P{score_chinese}+$P{score_english}+$P{score_chemistry}+$P{score_physical}+$P{score_biology}]]></variableExpression>
-		<initialValueExpression><![CDATA[0]]></initialValueExpression>
-	</variable>
-	<variable name="averge" class="java.lang.Float">
-		<variableExpression><![CDATA[$V{total}/6]]></variableExpression>
-		<initialValueExpression><![CDATA[0]]></initialValueExpression>
-	</variable>
 	<background>
 		<band splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
@@ -205,16 +197,6 @@
 				<reportElement x="300" y="270" width="100" height="30" uuid="adfa2c3b-7ad9-4477-84cc-fc8ff4fc8b12"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{score_biology}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="450" y="50" width="100" height="30" uuid="63064450-6a38-4507-9e42-817aa071f754"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$V{total}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="450" y="160" width="100" height="30" uuid="f5a7de18-b8f1-4773-856c-a233fce4b053"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$V{averge}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="264" width="100" height="30" uuid="1c47e9f2-38d8-42ee-b40f-f40c20b65794"/>
