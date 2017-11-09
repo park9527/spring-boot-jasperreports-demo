@@ -6,6 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 @RestController
@@ -32,7 +33,7 @@ public class UserController {
     @GetMapping("/{reportName}")
     public ModelAndView getReportByParam(final ModelMap modelMap,
                                          @PathVariable(REPORT_NAME) final String reportName,
-                                         @RequestParam(FILE_FORMAT) final String format) {
+                                         @RequestParam(FILE_FORMAT) final String format, HttpServletResponse response) {
         Collection itemsMap = new ArrayList<>();
         Map<String, Object> map = new HashMap<>();
         map.put("name", "张山");
@@ -46,6 +47,8 @@ public class UserController {
         map.put("score_biology", 99);
         map.put("score_top", 88);
         itemsMap.add(map);
+
+        response.setContentType("text/html;charset=UTF-8");
 
         JRDataSource jrDataSource = new JRMapCollectionDataSource(itemsMap);
         modelMap.put(DATASOURCE, jrDataSource);

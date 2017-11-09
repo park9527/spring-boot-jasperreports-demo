@@ -23,11 +23,11 @@
 	<title>
 		<band height="79" splitType="Stretch">
 			<staticText>
-				<reportElement x="1" y="10" width="559" height="60" uuid="571b647c-c0c3-4133-b8a5-f3dbc34f26c4"/>
+				<reportElement x="1" y="10" width="559" height="60" forecolor="#A61E1C" backcolor="#E86B68" uuid="571b647c-c0c3-4133-b8a5-f3dbc34f26c4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="19"/>
 				</textElement>
-				<text><![CDATA[冰上浮云的报表]]></text>
+				<text><![CDATA[Ice chen Report]]></text>
 			</staticText>
 		</band>
 	</title>
