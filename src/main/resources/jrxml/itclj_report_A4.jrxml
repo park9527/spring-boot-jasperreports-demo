@@ -15,6 +15,12 @@
 	<queryString>
 		<![CDATA[]]>
 	</queryString>
+	<variable name="total" class="java.lang.Integer">
+		<variableExpression><![CDATA[$P{score_math}+$P{score_chinese}+$P{score_english}+$P{score_chemistry}+$P{score_physical}+$P{score_biology}]]></variableExpression>
+	</variable>
+	<variable name="average" class="java.lang.Float">
+		<variableExpression><![CDATA[($P{score_math}.floatValue()+$P{score_chinese}.floatValue()+$P{score_english}.floatValue()+$P{score_chemistry}.floatValue()+$P{score_physical}.floatValue()+$P{score_biology}.floatValue())/6]]></variableExpression>
+	</variable>
 	<background>
 		<band splitType="Stretch">
 			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
@@ -140,7 +146,7 @@
 				<text><![CDATA[总分]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="462" y="103" width="68" height="32" uuid="fbd95988-86ff-451c-9820-8d61cb03db12"/>
+				<reportElement x="461" y="109" width="68" height="32" uuid="fbd95988-86ff-451c-9820-8d61cb03db12"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="华文宋体" size="19"/>
 				</textElement>
@@ -204,6 +210,16 @@
 				<reportElement x="450" y="264" width="100" height="30" uuid="1c47e9f2-38d8-42ee-b40f-f40c20b65794"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
 				<textFieldExpression><![CDATA[$P{score_top}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="50" width="110" height="30" uuid="2171ef1a-ed24-4b02-acd8-eb7b910ce7ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="167" width="100" height="30" uuid="365b47c2-4290-4f53-89c7-75edbb3d29df"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{average}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
