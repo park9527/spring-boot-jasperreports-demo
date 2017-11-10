@@ -25,9 +25,9 @@
 			<staticText>
 				<reportElement x="1" y="10" width="559" height="60" forecolor="#A61E1C" backcolor="#E86B68" uuid="571b647c-c0c3-4133-b8a5-f3dbc34f26c4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
-				<text><![CDATA[Ice chen Report]]></text>
+				<text><![CDATA[冰上浮云的报表]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -69,7 +69,7 @@
 			<staticText>
 				<reportElement x="20" y="7" width="68" height="32" uuid="c0240cf1-84c7-4197-b32e-dc59cbb77c66"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[姓名]]></text>
 			</staticText>
@@ -79,83 +79,85 @@
 			<staticText>
 				<reportElement x="150" y="10" width="100" height="30" uuid="146ca4d2-8db7-4b85-92a6-a062dd6fa2e8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[语文]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="150" y="57" width="100" height="30" uuid="dc906036-fb4b-4a80-b6cc-b55529aef5da"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[数学]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="151" y="110" width="100" height="30" uuid="36d9a70b-ee05-4145-8e33-6a659fb20617"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[英语]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="151" y="167" width="100" height="30" uuid="5170819b-ecac-4cd3-a5c6-a83e9bf84b2d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[化学]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="151" y="222" width="100" height="30" uuid="5f2f926b-a906-40f4-906e-62959b67351c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[物理]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="151" y="271" width="100" height="30" uuid="08b589c1-691c-43a2-ad6b-6ce5a9ecd766"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[生物]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="20" y="112" width="68" height="32" uuid="77e69092-3473-4307-ac52-8b55451af4df"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[学号]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="19" y="222" width="68" height="32" uuid="43778e62-6964-4e17-8290-08ca730fc23a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[排名]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="7" width="68" height="32" uuid="933bd011-3c97-4a70-ac8c-435e0746b6c1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[总分]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="462" y="103" width="68" height="32" uuid="fbd95988-86ff-451c-9820-8d61cb03db12"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="19"/>
+					<font fontName="华文宋体" size="19"/>
 				</textElement>
 				<text><![CDATA[平均分]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="450" y="219" width="94" height="32" uuid="434599cf-57c4-4339-8729-c3611a9e8669"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16"/>
+					<font fontName="华文宋体" size="16"/>
 				</textElement>
 				<text><![CDATA[排名最高科目]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="10" y="58" width="100" height="30" uuid="5b2cb3cb-c64d-49c5-821c-05e4646b192d"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="华文宋体"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
 			</textField>
 			<textField>
